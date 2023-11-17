@@ -1,0 +1,2 @@
+1 - testar com outra lib de serie temporal
+2 - achar um jeito de preencher os dados faltantes para cada garagem
