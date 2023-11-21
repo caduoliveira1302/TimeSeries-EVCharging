@@ -1,0 +1,28 @@
+This EV Charging data, gathered and maintained by the National Renewable Energy Lab (NREL), tracks nearly 400 Electric 
+Vehicles (EVs) over a 4-5 year period (2016-2021), and how the EVs and their drivers behave at a workplace charging 
+station. The dataset is further enriched by having a field named "afterPaid," which is a boolean type that indicates 
+whether a charging session is free or paid. All stations are free to use for the first 2.5 years of operation.
+
+Please find the full overview of the data here: https://data.nrel.gov/submissions/182
+
+=======================================================================================================================
+
+driverId --> A nonsequential unique identifier for each registered user.
+vehicle_model --> A string that identifies the make and model of the vehicle being charged in each record.
+request_entry_time --> A time stamp indicating when the request for vehicle charging was placed from the driver's 
+                       mobile device.
+expected_departure --> A time stamp indicating when the driver expects to depart.
+station --> A unique string data type that denotes the station and port used for charging; it can also be used as a 
+            surrogate for
+start_date_time --> A time stamp indicating the date and time when a charger was connected to the vehicle.
+end_date_time --> A time stamp indicating the date and time when a charger was disconnected to the vehicle.
+start_charge --> A time stamp indicating the date and time when power started to flow to the vehicle.
+termin_charge --> A time stamp indicating the date and time when power finished to flow to the vehicle.
+controlled_duration --> This shows the amount of time (in hours) in which a vehicle's charging was controlled.
+miles_requested --> This indicates the number of miles requested by the user through their device.
+max_charge_power --> The maximum charge power during the charge session.
+kwh_requested --> This is the kWh requested from the charge session as a function of the miles requested and useable 
+                  high-voltage pack
+energy_charged --> The amount of kWh that were actually delivered to the vehicle during the charge session.
+cost_for_session --> The cost of the charge session as a result of the park time durationand energy demand. 
+afterPaid --> A boolean data type signifying whether the record was before or after payment was required for charging.

@@ -1,0 +1,24 @@
+Data have been collected from a large housing cooperative in Norway, with 1,113 apartments and 2,321 residents. 
+A new infrastructure for EV charging was installed from December 2018. From December 2018 to January 2020, charging 
+sessions were registered by 97 user IDs; 82 of these IDs appeared to be still active at the end of the period. 
+In the data provided with this article, Central European Time (CET) zone is used
+
+=======================================================================================================================
+
+session_ID --> Unique ID for EV charging session 
+Garage_ID --> ID for garage address 
+User_ID --> ID for user 
+User_type --> CP ownership: Private or shared CPs
+Shared_ID --> When shared CPs used: ID for shared CP 
+Start_plugin --> Plug-in date and time (format 21.12.2018 10:20)
+Start_plugin_hour --> Clock hour for plug-in (from 00 to 23)
+End_plugout --> Plug-out date and time (format 21.12.2018 10:20)
+End_plugout_hour --> Clock hour for plug-out (from 00 to 23)
+El_kWh --> Charged energy (kWh)
+Duration_hours --> Duration of the EV connection time, per charging session (decimal hours)
+month_plugin --> Plug-in month (January-December)
+weekdays_plugin --> Plug-in weekday (Monday-Sunday)
+Plugin_category --> Category for plug-in time during the day. Each category lasts three hours (early/late night, 
+                                                                                               morning, afternoon, 
+                                                                                               evening)
+Duration_category --> Category for plug-in duration (<3h, 3-6h, 6-9h, 9-12h, 12-15h, 15-18h, >18h)
